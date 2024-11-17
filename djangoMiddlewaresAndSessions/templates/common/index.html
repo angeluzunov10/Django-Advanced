@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>
+        Hello user!
+    </h1>
+
+    <form>
+        {{ my_form }}
+        {% csrf_token %}
+        <button>Submit</button>
+    </form>
+{% endblock %}
